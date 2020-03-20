@@ -35,6 +35,7 @@ public class MainActivity extends CordovaActivity
         }
 
         // Set by <content src="index.html" /> in config.xml
+        super.setIntegerProperty("loadUrlTimeoutValue", 120000);
         loadUrl(launchUrl);
     }
 
